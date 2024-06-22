@@ -25,6 +25,7 @@ header {
 
 header .logo img {
     max-height: 50px;
+    width: auto;
 }
 
 header nav ul {
@@ -71,11 +72,14 @@ header .profile-icon {
     position: relative;
     text-align: center;
     color: white;
+    overflow: hidden;
 }
 
-#hero img {
+.hero-image {
     width: 100%;
     height: auto;
+    max-height: 600px;
+    object-fit: cover;
     opacity: 0.8;
 }
 
@@ -84,6 +88,8 @@ header .profile-icon {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
 }
 
 #hero h1 {
@@ -188,21 +194,4 @@ footer .social-media a img {
 footer .newsletter {
     margin-top: 20px;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-footer .newsletter input {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    width: 100%;
-    max-width: 300px;
-}
-
-footer .newsletter button {
-    padding: 10px 20px;
-    background-color: #e50914;
-    border: 1px solid #007bff; 
-}
+}  
